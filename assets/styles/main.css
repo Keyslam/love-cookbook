@@ -1,0 +1,110 @@
+:root {
+  --altbg: #eff1f5;
+  --bg: #e6e9ef;
+  --link: #7287fd;
+  --link-hover: #1e66f5;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+body {
+  font-family: "Inter", serif;
+  line-height: 1.6;
+  color: black;
+  padding: 20px;
+}
+
+code {
+  font-family: "Fira Code", serif;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+
+  img {
+    max-width: 95%;
+    max-height: 500px;
+  }
+}
+
+.navbar {
+  a {
+    text-decoration: none;
+  }
+}
+
+.guide {
+  width: 80vw;
+}
+
+.guide-title {
+  font-size: 2em;
+  color: #222;
+}
+
+.guide-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.guide-content pre {
+  background: #222;
+  color: #eee;
+  padding: 0.5rem;
+  border-radius: 5px;
+  overflow-x: auto;
+
+  height: auto;
+  flex-grow: 1;
+  grid-area: 2 / 2 / 3 / 3;
+  grid-column: 2 / 4;
+}
+
+.guide-content iframe {
+  border: none;
+}
+
+.guide-toc {
+  background-color: var(--altbg);
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0 1.2rem;
+  color: #595959;
+  overflow-x: auto;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul>li>a {
+    text-decoration: none;
+  }
+
+  width: max-content;
+  height: auto;
+}
+
+.guide-footer {
+  border-radius: 5px;
+  margin: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  color: #595959;
+}
