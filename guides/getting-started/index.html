@@ -39,8 +39,7 @@
                   </li><li><a class="" href="/love-cookbook/guides/fundamentals/variables/">Variables</a>
                   </li><li><a class="" href="/love-cookbook/guides/fundamentals/functions/">Functions</a>
                   </li><li><a class="" href="/love-cookbook/guides/fundamentals/if-statements/">If-statements</a>
-                  </li><li><a class="" href="/love-cookbook/guides/fundamentals/tables/">Tables</a>
-                  </li><li><a class="" href="/love-cookbook/guides/fundamentals/for-loops/">For-loops</a>
+                  </li><li><a class="" href="/love-cookbook/guides/fundamentals/tables/">Tables and For-loops</a>
                   </li></ul>
             </li><li class="group-header">LÖVE<ul><li><a class="" href="/love-cookbook/guides/love/drawing-a-rectangle/">Drawing a rectangle</a>
                   </li><li><a class="" href="/love-cookbook/guides/love/drawing-image/">Drawing an image</a>
@@ -97,12 +96,13 @@ function love.draw()
 end
 </code></pre>
 <p>This will show this:</p>
-<iframe id="love-iframe-683" src="/love-cookbook/assets/love/love-js" width="600" height="450"></iframe>
+<iframe id="love-iframe-429" src="/love-cookbook/assets/love/love-js" width="600" height="450"></iframe>
 <script>
-const iframe_683 = document.getElementById('love-iframe-683');
-iframe_683.addEventListener('load', function() {
-iframe_683.contentWindow.postMessage({lua: `love.window.setMode(600, 450) 
-function love.draw() love.graphics.print("Hello, World!", 300, 225)
+const iframe_429 = document.getElementById('love-iframe-429');
+iframe_429.addEventListener('load', function() {
+iframe_429.contentWindow.postMessage({lua: `love.window.setMode(600, 450) 
+function love.draw()
+ love.graphics.print("Hello, World!", 300, 225)
 end
 `}, '*');
 });
